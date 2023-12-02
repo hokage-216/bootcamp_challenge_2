@@ -11,82 +11,137 @@
 
     <!-- Header w/ nav links -->
     <header>
-        <h1>LeVente</h1>
-        <nav>
-            <a class="nav-link" href="#about">About Me</a>
-            <a class="nav-link" href="#work">My Work</a>
-            <a class="nav-link" href="#resume">Resume</a>
-            <a class="nav-link" href="#contact">Contact</a>
-        </nav>
+        <div id="head-title-container">
+            <h1 id="header-title">LeVente B.</h1>
+        </div>
+        <div id="nav-flex">
+            <nav>
+                <a class="nav-link" href="#about">About Me</a>
+                <a class="nav-link" href="#work">My Work</a>
+                <a class="nav-link" href="#resume">Resume</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Medium Hero -->
     <div id="med-hero">
-        <span>Subtitle Here</span>
+        <span>Learn More About Me Below!</span>
     </div>
     <!-- Main Section -->
-    <main>
+    <div id="main-container">
+        <main>
 
-        <!-- about me section -->
-        <section id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque diam volutpat commodo sed. Semper eget duis at tellus at urna condimentum mattis pellentesque. Odio ut enim blandit volutpat maecenas. Fames ac turpis egestas maecenas pharetra convallis posuere. Nulla facilisi etiam dignissim diam quis enim. Turpis tincidunt id aliquet risus feugiat in ante metus. Aliquam sem et tortor consequat id porta nibh venenatis cras. Semper eget duis at tellus at urna condimentum mattis. Erat velit scelerisque in dictum non consectetur a erat.</p>
+            <img id="avatar" src="/assets/img/avatar.png" alt="avatar image">
 
-            <p>Cras tincidunt lobortis feugiat vivamus at. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Sit amet facilisis magna etiam tempor. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Massa eget egestas purus viverra accumsan. Auctor urna nunc id cursus metus. Dui accumsan sit amet nulla facilisi morbi tempus iaculis. Mattis pellentesque id nibh tortor id aliquet lectus. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Purus semper eget duis at tellus at urna condimentum mattis. Fames ac turpis egestas sed. Egestas congue quisque egestas diam in arcu cursus euismod quis. In nibh mauris cursus mattis molestie. A lacus vestibulum sed arcu non odio euismod. Magna sit amet purus gravida quis blandit turpis cursus. Amet purus gravida quis blandit turpis cursus in. Iaculis nunc sed augue lacus viverra vitae congue.</p>
-        </section>
+            <!-- about me section -->
+            <section class="main-sections row" id="about">
+                <div class="title-wrapper column-30">
+                    <h2 class="section-title">About</h2>
+                </div>
+                <article class="section-article column-70" id="about-info-wrapper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque diam volutpat commodo sed. Semper eget duis at tellus at urna condimentum mattis pellentesque. Odio ut enim blandit volutpat maecenas. Fames ac turpis egestas maecenas pharetra convallis posuere. Nulla facilisi etiam dignissim diam quis enim. </p>
 
-        <!-- my work section -->
-        <section id="work">
-            <h2>Work</h2>
-            <article id="project-container">
-                <section class="work-link" id="project1">
-                    <div class="project-title">
-                        <h3>Surf Report</h3>
-                        <p>MERN Stack</p>
-                    </div> 
-                </section>
-                <section class="work-link" id="project2">
-                    <div class="project-title">
-                        <h3>LED Wall</h3>
-                        <p>Node/IoT</p>
+                    <p>Cras tincidunt lobortis feugiat vivamus at. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Sit amet facilisis magna etiam tempor. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Massa eget egestas purus viverra accumsan. Auctor urna nunc id cursus metus. Dui accumsan sit amet nulla facilisi morbi tempus iaculis. Mattis pellentesque id nibh tortor id aliquet lectus. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. </p>
+                </article>
+            </section>
+
+            <!-- my work section -->
+            <section class="main-sections row" id="work">
+                <div class="title-wrapper column-30">
+                    <h2 class="section-title">Work</h2>
+                </div>
+                <article class="section-article column-70" id="project-container">
+                    <div id="pro-row-top">
+
+                        
+                                <section class="work-link box" id="project1">
+                                        <div class="project-title">
+                                            <h3>Mini Project 1</h3>
+                                            <p>HTML/CSS</p>
+                                        </div>
+                                        <a class="project-opacity" href="https://hokage-216.github.io/Mini_Project_1/"><div class="op-layer"></div></a>
+                                </section>
+                        
+
                     </div>
-                </section>
-                <section class="work-link" id="project3">
-                    <div class="project-title">
-                        <h3>Calculator</h3>
-                        <p>React/JavaScript/CSS</p>
-                    </div>
-                </section>
-                <section class="work-link" id="project4">
-                    <div class="project-title">
-                        <h3>Pastel Puzzles</h3>
-                        <p>MERN Stack</p>
-                    </div>
-                </section>
-                <section class="work-link" id="project5">
-                    <div class="project-title">
-                        <h3>Run Buddy</h3>
-                        <p>HTML/CSS</p>
-                    </div>
-                </section>
-            </article>
-        </section>
 
-        <!-- contact me section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <a href="tel: +19999999999">+1 (999)-999-9999</a>
-            <a href="mailto: emailhere@provider.com" id="email-address">emailhere@provider.com</a>
-            <a href="#">GitHub</a>
-            <a href="#">X (Twitter)</a>
-            <a href="#">Spotify</a>
-        </section>
+                    <div id="pro-row-bottom">
 
-    </main>
+                        <div class="pro-rows">
+
+                        <section class="work-link box" id="project2">
+                                <a class="project-opacity" href="#">
+                                    <div class="project-title">
+                                        <h3>LED Wall</h3>
+                                        <p>Node/IoT</p>
+                                    </div>
+                                    <a class="project-opacity" href="#"><div class="op-layer"></div></a>
+                                </a>
+                        </section>
+                        <section class="work-link box" id="project3">
+                                <a class="project-opacity" href="#">
+                                    <div class="project-title">
+                                        <h3>Calculator</h3>
+                                        <p>React/JavaScript/CSS</p>
+                                    </div>
+                                    <a class="project-opacity" href="#"><div class="op-layer"></div></a>
+                                </a>
+                        </section>
+
+                        </div>
+
+                        <div class="pro-rows">
+
+                        <section class="work-link box" id="project4">
+                                <a class="project-opacity" href="#">
+                                    <div class="project-title">
+                                        <h3>Pastel Puzzles</h3>
+                                        <p>MERN Stack</p>
+                                    </div>
+                                    <a class="project-opacity" href="#"><div class="op-layer"></div></a>
+                                </a>
+                        </section>
+                        <section class="work-link box" id="project5">
+                                <a class="project-opacity" href="#">
+                                    <div class="project-title">
+                                        <h3>Run Buddy</h3>
+                                        <p>HTML/CSS</p>
+                                    </div>
+                                    <a class="project-opacity" href="#"><div class="op-layer"></div></a>
+                                </a>
+                        </section>
+
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+
+            <!-- contact me section -->
+            <section class="main-sections row" id="contact">
+                <div class="title-wrapper column-30">
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <article class="section-article column-70" id="contact-info-container">
+                    <a href="tel: +19999999999">+1 (999)-999-9999</a> 
+                    <span class="divider">|</span>
+                    <a href="mailto: emailhere@provider.com" id="email-address">emailhere@provider.com</a> 
+                    <span class="divider">|</span>
+                    <a href="#">GitHub</a> 
+                    <span class="divider">|</span>
+                    <a href="#">X&nbsp;(Twitter)</a> 
+                    <span class="divider">|</span>
+                    <a href="#">Spotify</a>
+                </article>
+            </section>
+
+        </main>
+    </div>
 
     <!-- Footer containing authorship -->
     <footer>
-        <h4>&copy; Created by LeVente Berry Jr.</h4> 
+        <h4 id="copy">&copy; 2023 Developed by LeVente Berry Jr.</h4> 
     </footer>
 
 </body>
