@@ -9,4 +9,4 @@ You can find a link to the project here:
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](/assets/img/responsive-gif.gif)
