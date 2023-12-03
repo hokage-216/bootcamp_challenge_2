@@ -65,19 +65,16 @@ nav {
 /* ----------- LARGE HERO ------------- */
 
 #med-hero {
-    /* flexbox controls */
-    display: flex;
-    justify-content: center;
-    /* setting background */
-   background-image: url("/assets/img/3472.jpg");
-   background-repeat: no-repeat;
    /* positioning the content */
-   height: 10vh;
-   padding: 20px 0;
+   height: 15vh;
+   text-align: right;
 }
 
 #med-hero span {
    background-color: var(--color-main-1);
+   position: relative;
+   top: -50px;
+   right: 20px;
    /* font settings */
    font-size: 1.25rem;
    font-weight: 700;
@@ -85,6 +82,12 @@ nav {
    width: 90%;
    text-align: center;
    padding-top: 5px;
+}
+
+#head-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ----------- MAIN CONTAINER ---------- */
@@ -157,6 +160,20 @@ main {
     padding-bottom: 10px;
 }
 
+#pro-row-top, #pro-row-bottom, .project-opacity, .project-img {
+    width: 100%;
+}
+
+.project-img {
+    object-fit: cover;
+    position: relative;
+    top: -56px;
+}
+
+#project5 img {
+    object-position: 10% 0;
+}
+
 .work-link {
     flex-basis: 100%;
     height: 120px;
@@ -173,37 +190,7 @@ main {
     padding: 10px 0;
     padding-left: 10px;
     font-size: 1rem;
-    z-index: 2;
-}
-
-#project1 {
-    background-image: url("/assets/img/working_with_css_22218720ab-jpg.jpg");
-    background-position-y: -200px;
-    background-size: contain;
-}
-
-#project2{
-    background-image: url("/assets/img/LED-Wall-Benefits.png");
-    background-repeat: repeat;
-    background-position-x: -20px;
-    background-position-y: -20px;
-}
-
-#project3{
-    background-image: url("/assets/img/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg");
-    background-position-y: -150px;
-    background-position-x: -20px;
-}
-
-#project4{
-    background-image: url("/assets/img/1000_F_235526413_vTWOZgJqJdB1elye0Vy3bBJX2YuLMf78.jpg");
-    background-position-y: -300px;
-    background-position-x: -20px;
-}
-
-#project5{
-    background-image: url("/assets/img/buddyrun_header.jpg");
-    background-position-y: -200px;
+    z-index: 3;
 }
 
 /* --------- CONTACT SECTION ---------- */
@@ -256,8 +243,11 @@ footer {
         margin: 0 5px;
     }
 
-}
 
+    #project5 img {
+        object-position: 80% 0;
+    }
+}
 /* laptop screen sizes and above */
 
 @media screen and (min-width: 1023px) {
@@ -280,18 +270,20 @@ footer {
 
     #med-hero {
         height: 20vh;
-        justify-content: end;
+        text-align: right;
+        z-index: 1;
     }
 
     #med-hero span{
-        width: 30%;
+        width: 35%;
         height: 40%;
         position: relative;
-        bottom: -70px;
-        right: 40px;
         font-size: 1.4rem;
+        padding: 10px;
         line-height: 1.6;
-
+        top: -80px;
+        right: 40px;
+        z-index: 2;
     }
 
     main{
@@ -336,16 +328,57 @@ footer {
         font-size: 1.4rem;
     }
 
-    .op-layer {
+    .project-title h3 {
+        font-size: 1.4rem;
+        padding: 5px;
+        color: var(--color-main-1);
+        font-weight: 600;
+    }
+
+    .project-title p {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .project-img{
         width: 100%;
-        height: 100%;
-        background-color: rgba(34, 120, 177, 0.5);
         position: relative;
         top: -84px;
+        object-fit: cover;
         z-index: 1;
     }
+
+    .img-cover-low{
+        width: 100%;
+        position: relative;
+        top: -160px;
+    }
+
+    #div-cover-top {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(34, 120, 177, 0.3);
+        position: relative;
+        top: -478px;
+        z-index: 2;
+    }
+
+    #div-cover-top:hover {
+        height: 100%;
+        background-color: rgba(34, 120, 177, 0.0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .div-cover {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(34, 120, 177, 0.3);
+        position: relative;
+        top: -253px;
+        z-index: 2;
+    }
     
-    .op-layer:hover {
+    .div-cover:hover {
         height: 100%;
         background-color: rgba(34, 120, 177, 0.0);
         transition: all 0.3s ease-in-out;
@@ -385,11 +418,11 @@ footer {
     }
     
     .column-30 {
-        flex: 0 0 20%; /* 30% of the container */
+        flex: 0 0 20%; /* 20% of the container */
     }
     
     .column-70 {
-        flex: 0 0 80%; /* 70% of the container */
+        flex: 0 0 80%; /* 80% of the container */
     }
 
     .title-wrapper{
@@ -415,15 +448,4 @@ footer {
         color: var(--color-main-2);
     }
 
-    .project-title h3 {
-        font-size: 1.4rem;
-        padding: 5px;
-        color: var(--color-main-1);
-        font-weight: 600;
-    }
-
-    .project-title p {
-        padding: 5px;
-        font-size: 1rem;
-    }
 }
